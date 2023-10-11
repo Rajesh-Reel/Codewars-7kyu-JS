@@ -30,7 +30,10 @@ var SequenceSum = (function() {
     function SequenceSum() {}
   
     SequenceSum.showSequence = function(count) {
-      console.log(count)
+  //     console.log(count);
+      if (count < 0) return `${count}<0`;
+      if (count <= 0) return "0=0";
+      
       let str = [];
       let sum = 0;
       for (let i = 0; i <= count; i++) {
